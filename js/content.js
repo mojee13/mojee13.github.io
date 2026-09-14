@@ -16,7 +16,7 @@ export const siteConfig = {
     location: "Padua, Italy",
     phdStartDate: "November 2024",
     headline: "Understanding how complex networks function—and how they fail.",
-    biography: `I am a PhD candidate at the University of Padua, working on network science, information dynamics, and the resilience of complex systems. As part of the CoMuNe Lab, my research investigates functional fragility in complex networks—asking how edge and pathway disruptions impact set-to-set communication flow and overall network functionality. My background combines physics, data science, and scientific computing, with applications spanning biological networks and complex interconnected systems.`,
+    biography: `My path into network science grew from a deep curiosity about how physical interactions give rise to complex collective behavior. Combining a background in theoretical physics, computational astrophysics, and data science, my research as a PhD candidate at the University of Padua (CoMuNe Lab) investigates functional fragility in complex networks—asking how edge and pathway disruptions impact set-to-set communication flow and network resilience.`,
     interests: [
       "Network Science & Complex Systems",
       "Functional Fragility & Resilience",
