@@ -1,0 +1,19 @@
+{
+  "name": "mojtaba-roshana-academic-website",
+  "version": "1.0.0",
+  "description": "Personal academic website for Mojtaba Roshana, PhD Candidate in Physics at the University of Padua.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Static HTML/CSS/JS site ready for deployment at https://mojee13.github.io/'",
+    "preview": "node server.js"
+  },
+  "author": "Mojtaba Roshana",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojee13/mojee13.github.io.git"
+  }
+}
