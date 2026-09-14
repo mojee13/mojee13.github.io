@@ -33,7 +33,6 @@ export const siteConfig = {
     lab: "https://comunelab.isiglobal.org/",
     unipd: "https://www.dfa.unipd.it/",
     emailAcademic: "mojtaba.roshana@phd.unipd.it",
-    emailPersonal: "roshana.mojtaba13@gmail.com",
     thesisPdf: "assets/Roshana_Mojtaba_Thesis.pdf",
     thesisUrl: "https://thesis.unipd.it/handle/20.500.12608/1/browse?authority=co10887&etal=-1&offset=86&order=1&rpp=20&sort_by=ASC&starts_with=R&type=relationCourse&utm_source=chatgpt.com"
   },
