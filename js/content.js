@@ -63,53 +63,49 @@ export const siteConfig = {
     {
       id: "functional-fragility",
       title: "Functional Fragility & Network Resilience",
-      subtitle: "PhD Research Focus",
-      status: "PhD Research — CoMuNe Lab",
+      subtitle: "PhD Research",
+      status: "CoMuNe Lab",
       tag: "Network Science",
       question: "Which connections and pathways are essential for communication between selected parts of a network, and how does their disruption affect overall function?",
-      whyItMatters: "Traditional connectivity analysis measures whether a network remains structurally connected after a perturbation. However, complex systems must maintain functional communication and throughput across key pathways.",
-      approach: "Using Laplacian diffusion, density matrices, and spectral methods to construct path-based descriptions of information propagation. We study set-to-set communication flow under edge and pathway perturbations to understand functional vulnerability in complex interconnected systems.",
+      context: "We move beyond structural connectivity to measure set-to-set information flow using Laplacian diffusion, spectral entropy, and pathway perturbation analysis in complex networks.",
       topics: [
-        "Functional Fragility & Vulnerability",
-        "Set-to-Set Communication Flow",
-        "Laplacian Diffusion & Density Matrices",
-        "Spectral Methods & Network Entropy",
-        "Path-Based Information Propagation"
+        "Laplacian Diffusion",
+        "Density Matrices",
+        "Spectral Entropy",
+        "Set-to-Set Flow"
       ]
     },
     {
       id: "connectome-dynamics",
       title: "Information Dynamics in Mammalian Connectomes",
-      subtitle: "MSc Thesis & CoMuNe Lab Research",
-      status: "Completed Thesis (Jul 2024) — NetSci-X 2024 Poster",
+      subtitle: "MSc Thesis",
+      status: "CoMuNe Lab",
       tag: "Biological Networks",
       question: "How does structural connectome wiring govern information flow and evolutionary clustering across species?",
-      whyItMatters: "Mammalian connectomes balance physical wiring cost with efficient information integration. Conducted at CoMuNe Lab, we applied density matrix representations and information-theoretic distance metrics to mammalian connectomes.",
-      approach: "Applying density-matrix representations and information-theoretic distance metrics to mammalian connectomes. Implementing global optimization algorithms (Simulated Annealing, Particle Swarm Optimization) to compare topological features with simulated dynamics.",
+      context: "Conducted at CoMuNe Lab under Prof. Manlio De Domenico. Brain networks optimize physical wiring against information integration. We applied density matrix representations and information-theoretic distance metrics to mammalian connectomes.",
       topics: [
-        "Mammalian Connectomics",
-        "CoMuNe Lab Thesis Research",
-        "Generalized Thermodynamics",
-        "Density Matrix Formalism",
-        "Simulated Annealing & Particle Swarm Optimization"
+        "Connectomics",
+        "CoMuNe Lab",
+        "Simulated Annealing",
+        "Particle Swarm Opt.",
+        "Phylogenetic Trees"
       ]
     },
     {
       id: "network-medicine",
       title: "Computational Modelling of Biological Networks",
-      subtitle: "Internship at Padua Center for Network Medicine",
-      status: "Research Internship — Network Medicine",
+      subtitle: "Research Internship",
+      status: "Padua Center for Network Medicine",
       tag: "Biological Networks",
       question: "How can generative network models fit empirical biological networks using entropy minimization and spectral density matrices?",
-      whyItMatters: "Discovering underlying structural rules in biological networks requires optimization procedures that fit generative models to empirical network topologies while preserving structural and spectral properties.",
-      approach: "Using optimization procedures such as Particle Swarm Optimization (PSO) and Simulated Annealing to fit generative models into empirical networks by minimizing entropy profiles derived from the density matrix formalism and spectral entropy. Implemented in R and Python, culminating in direct comparisons of various approaches including Exponential Random Graph Models (ERGM) and Configuration Models.",
+      context: "Using optimization procedures such as particle swarms and simulated annealing to fit generative models into empirical networks involves minimizing entropy profiles derived from the density matrix formalism and spectral entropy to discover the underlying rules of empirical networks. The internship entails implementation in R/Python, culminating in a direct comparison of various approaches like ERGM and Configuration Model.",
       topics: [
         "Padua Center for Network Medicine",
-        "Generative Network Models",
-        "Density Matrix & Spectral Entropy",
-        "Particle Swarms & Simulated Annealing",
-        "ERGM & Configuration Model Comparison",
-        "R & Python Implementation"
+        "Generative Models",
+        "Spectral Entropy & Density Matrix",
+        "Particle Swarm & Annealing",
+        "ERGM & Configuration Model",
+        "R / Python"
       ]
     }
   ],
@@ -134,22 +130,6 @@ export const siteConfig = {
   year         = {2024},
   month        = {July},
   type         = {Master's Thesis}
-}`
-    },
-    {
-      id: "netscix-2024",
-      category: "posters",
-      categoryName: "Conference Posters & Presentations",
-      title: "Information pathways analysis in mammalian connectomes unravels clusters akin to the phylogenetic tree",
-      authors: "Mojtaba Roshana, Manlio De Domenico, et al.",
-      venue: "NetSci-X 2024 (International School and Conference on Network Science)",
-      year: "2024",
-      abstract: "Poster presentation detailing information pathway analysis on mammalian connectomes conducted at CoMuNe Lab, demonstrating that spectral information-theoretic distances capture evolutionary clustering closely mirroring phylogenetic trees.",
-      bibtex: `@inproceedings{roshana2024netscix,
-  author       = {Roshana, Mojtaba and De Domenico, Manlio},
-  title        = {Information pathways analysis in mammalian connectomes unravels clusters akin to the phylogenetic tree},
-  booktitle    = {NetSci-X 2024 Conference Poster Session},
-  year         = {2024}
 }`
     }
   ],
