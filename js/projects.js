@@ -1,6 +1,6 @@
 /**
  * Selected Code & Projects Component
- * Renders curated research repositories and computational physics implementations.
+ * Renders curated research repositories and computational physics implementations with clean categorization.
  */
 
 import { siteConfig } from './content.js';
@@ -11,6 +11,13 @@ export function renderProjects(containerId) {
 
   const mainProjects = siteConfig.projects;
 
+  const categories = [
+    { id: 'all', label: 'All Projects' },
+    { id: 'Research', label: 'Research & Networks' },
+    { id: 'Scientific Computing', label: 'Scientific Computing' },
+    { id: 'Coursework', label: 'Coursework' }
+  ];
+
   let currentCategory = 'all';
 
   function render() {
@@ -20,17 +27,18 @@ export function renderProjects(containerId) {
 
     container.innerHTML = `
       <div class="projects-filter-bar">
-        <button class="filter-tab ${currentCategory === 'all' ? 'active' : ''}" data-cat="all">All Projects</button>
-        <button class="filter-tab ${currentCategory === 'Research' ? 'active' : ''}" data-cat="Research">Research & Networks</button>
-        <button class="filter-tab ${currentCategory === 'Scientific Computing' ? 'active' : ''}" data-cat="Scientific Computing">Scientific Computing</button>
-        <button class="filter-tab ${currentCategory === 'Coursework' ? 'active' : ''}" data-cat="Coursework">Coursework</button>
+        ${categories.map(c => `
+          <button class="filter-tab ${currentCategory === c.id ? 'active' : ''}" data-cat="${c.id}">
+            ${c.label}
+          </button>
+        `).join('')}
       </div>
 
       <div class="projects-grid">
         ${filteredProjects.map(p => `
           <div class="project-card">
             <div class="project-card-header">
-              <span class="project-tag project-tag-${p.category.toLowerCase().replace(/\s+/g, '-')}">${p.tag}</span>
+              <span class="project-tag">${p.categoryBadge || p.tag}</span>
               <span class="project-lang">${p.language}</span>
             </div>
 
