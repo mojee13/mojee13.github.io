@@ -15,8 +15,7 @@ export function renderPublications(containerId, modalContainerId) {
   // Render Category Filter Tabs
   const categories = [
     { id: 'all', label: 'All Outputs' },
-    { id: 'thesis', label: 'Master\'s Thesis' },
-    { id: 'posters', label: 'Posters & Presentations' }
+    { id: 'thesis', label: 'Master\'s Thesis' }
   ];
 
   let currentCategory = 'all';

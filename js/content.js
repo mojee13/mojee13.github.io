@@ -66,8 +66,8 @@ export const siteConfig = {
       subtitle: "PhD Research",
       status: "CoMuNe Lab",
       tag: "Network Science",
-      question: "Which connections and pathways are essential for communication between selected parts of a network, and how does their disruption affect overall function?",
-      context: "We move beyond structural connectivity to measure set-to-set information flow using Laplacian diffusion, spectral entropy, and pathway perturbation analysis in complex networks.",
+      question: "Which pathways are critical for set-to-set communication flow, and how does disruption impact network function?",
+      context: "Investigating set-to-set information flow using Laplacian diffusion, spectral entropy, and pathway perturbation analysis in complex networks.",
       topics: [
         "Laplacian Diffusion",
         "Density Matrices",
@@ -82,13 +82,13 @@ export const siteConfig = {
       status: "CoMuNe Lab",
       tag: "Biological Networks",
       question: "How does structural connectome wiring govern information flow and evolutionary clustering across species?",
-      context: "Conducted at CoMuNe Lab under Prof. Manlio De Domenico. Brain networks optimize physical wiring against information integration. We applied density matrix representations and information-theoretic distance metrics to mammalian connectomes.",
+      context: "Conducted at CoMuNe Lab under Prof. Manlio De Domenico. Applying density matrix representations, spectral distance metrics, and global optimization to mammalian connectomes.",
       topics: [
         "Connectomics",
-        "CoMuNe Lab",
+        "Density Matrices",
         "Simulated Annealing",
         "Particle Swarm Opt.",
-        "Phylogenetic Trees"
+        "Phylogenetic Analysis"
       ]
     },
     {
@@ -98,13 +98,12 @@ export const siteConfig = {
       status: "Padua Center for Network Medicine",
       tag: "Biological Networks",
       question: "How can generative network models fit empirical biological networks using entropy minimization and spectral density matrices?",
-      context: "Using optimization procedures such as particle swarms and simulated annealing to fit generative models into empirical networks involves minimizing entropy profiles derived from the density matrix formalism and spectral entropy to discover the underlying rules of empirical networks. The internship entails implementation in R/Python, culminating in a direct comparison of various approaches like ERGM and Configuration Model.",
+      context: "Fitting generative models (ERGM, Configuration Model) to empirical networks by minimizing density-matrix spectral entropy profiles via Particle Swarm Optimization and Simulated Annealing in R/Python.",
       topics: [
-        "Padua Center for Network Medicine",
         "Generative Models",
-        "Spectral Entropy & Density Matrix",
-        "Particle Swarm & Annealing",
-        "ERGM & Configuration Model",
+        "Spectral Entropy",
+        "Particle Swarm Opt.",
+        "ERGM & Configuration",
         "R / Python"
       ]
     }
