@@ -49,7 +49,7 @@ export const siteConfig = {
       period: "Oct 2021 – Jul 2024",
       degree: "MSc in Physics of Data",
       institution: "University of Padua, Italy",
-      details: "Completed July 2024. Master's Thesis: 'Generalized Thermodynamics in Complex Information Dynamics: Optimization Techniques and Applications to Mammalian Connectomes'. Specialized in complex networks, information theory, statistical mechanics, and data science."
+      details: "Completed July 2024. Conducted Master's Thesis research at CoMuNe Lab: 'Generalized Thermodynamics in Complex Information Dynamics: Optimization Techniques and Applications to Mammalian Connectomes'. Specialized in complex networks, information theory, statistical mechanics, and data science."
     },
     {
       period: "Sep 2017 – Sep 2021",
@@ -80,18 +80,36 @@ export const siteConfig = {
     {
       id: "connectome-dynamics",
       title: "Information Dynamics in Mammalian Connectomes",
-      subtitle: "MSc Thesis & Biological Networks",
+      subtitle: "MSc Thesis & CoMuNe Lab Research",
       status: "Completed Thesis (Jul 2024) — NetSci-X 2024 Poster",
       tag: "Biological Networks",
-      question: "How does structural wiring in mammalian brain networks govern information dynamics and phylogenetic clustering?",
-      whyItMatters: "Mammalian connectomes balance physical wiring cost with efficient information integration. Quantifying information flow pathways provides insights into evolutionary patterns across different species' brain networks.",
+      question: "How does structural connectome wiring govern information flow and evolutionary clustering across species?",
+      whyItMatters: "Mammalian connectomes balance physical wiring cost with efficient information integration. Conducted at CoMuNe Lab, we applied density matrix representations and information-theoretic distance metrics to mammalian connectomes.",
       approach: "Applying density-matrix representations and information-theoretic distance metrics to mammalian connectomes. Implementing global optimization algorithms (Simulated Annealing, Particle Swarm Optimization) to compare topological features with simulated dynamics.",
       topics: [
         "Mammalian Connectomics",
+        "CoMuNe Lab Thesis Research",
         "Generalized Thermodynamics",
         "Density Matrix Formalism",
-        "Simulated Annealing & Particle Swarm Optimization",
-        "Structural vs. Functional Alignment"
+        "Simulated Annealing & Particle Swarm Optimization"
+      ]
+    },
+    {
+      id: "network-medicine",
+      title: "Computational Modelling of Biological Networks",
+      subtitle: "Internship at Padua Center for Network Medicine",
+      status: "Research Internship — Network Medicine",
+      tag: "Biological Networks",
+      question: "How can generative network models fit empirical biological networks using entropy minimization and spectral density matrices?",
+      whyItMatters: "Discovering underlying structural rules in biological networks requires optimization procedures that fit generative models to empirical network topologies while preserving structural and spectral properties.",
+      approach: "Using optimization procedures such as Particle Swarm Optimization (PSO) and Simulated Annealing to fit generative models into empirical networks by minimizing entropy profiles derived from the density matrix formalism and spectral entropy. Implemented in R and Python, culminating in direct comparisons of various approaches including Exponential Random Graph Models (ERGM) and Configuration Models.",
+      topics: [
+        "Padua Center for Network Medicine",
+        "Generative Network Models",
+        "Density Matrix & Spectral Entropy",
+        "Particle Swarms & Simulated Annealing",
+        "ERGM & Configuration Model Comparison",
+        "R & Python Implementation"
       ]
     }
   ],
@@ -103,12 +121,12 @@ export const siteConfig = {
       categoryName: "Master's Thesis",
       title: "Generalized Thermodynamics in Complex Information Dynamics: Optimization Techniques and Applications to Mammalian Connectomes",
       authors: "Mojtaba Roshana",
-      venue: "University of Padua, Department of Physics and Astronomy",
+      venue: "University of Padua, Department of Physics and Astronomy (CoMuNe Lab)",
       year: "2024",
       month: "July",
       pdfUrl: "assets/Roshana_Mojtaba_Thesis.pdf",
       externalUrl: "https://thesis.unipd.it/handle/20.500.12608/1/browse?authority=co10887&etal=-1&offset=86&order=1&rpp=20&sort_by=ASC&starts_with=R&type=relationCourse&utm_source=chatgpt.com",
-      abstract: "Master's thesis presented at the University of Padua under the MSc in Physics of Data degree program. Focuses on information-theoretic density matrix representations of complex networks, global optimization techniques, and applications to mammalian connectome organization.",
+      abstract: "Master's thesis presented at the University of Padua under the MSc in Physics of Data degree program, conducted at CoMuNe Lab under the supervision of Prof. Manlio De Domenico. Focuses on information-theoretic density matrix representations of complex networks, global optimization techniques, and applications to mammalian connectome organization.",
       bibtex: `@mastersthesis{roshana2024generalized,
   author       = {Roshana, Mojtaba},
   title        = {Generalized Thermodynamics in Complex Information Dynamics: Optimization Techniques and Applications to Mammalian Connectomes},
@@ -126,7 +144,7 @@ export const siteConfig = {
       authors: "Mojtaba Roshana, Manlio De Domenico, et al.",
       venue: "NetSci-X 2024 (International School and Conference on Network Science)",
       year: "2024",
-      abstract: "Poster presentation detailing information pathway analysis on mammalian connectomes, demonstrating that spectral information-theoretic distances capture evolutionary clustering closely mirroring phylogenetic trees.",
+      abstract: "Poster presentation detailing information pathway analysis on mammalian connectomes conducted at CoMuNe Lab, demonstrating that spectral information-theoretic distances capture evolutionary clustering closely mirroring phylogenetic trees.",
       bibtex: `@inproceedings{roshana2024netscix,
   author       = {Roshana, Mojtaba and De Domenico, Manlio},
   title        = {Information pathways analysis in mammalian connectomes unravels clusters akin to the phylogenetic tree},
