@@ -5,7 +5,6 @@
 
 import { siteConfig } from './content.js';
 import { HeroNetwork } from './hero-network.js';
-import { FragilityWidget } from './fragility-widget.js';
 import { renderPublications } from './publications.js';
 import { renderProjects } from './projects.js';
 
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initNavigation();
   initHeroVisual();
-  initFragilityWidget();
   initResearchDeepDives();
   renderEducationTimeline();
   renderPublications('publications-container', 'modal-container');
@@ -84,42 +82,9 @@ function initNavigation() {
   });
 }
 
-// Hero Visual Controls
+// Hero Ambient Visual
 function initHeroVisual() {
-  const heroNetwork = new HeroNetwork('hero-canvas');
-  
-  const playBtn = document.getElementById('hero-play-btn');
-  const speedBtn = document.getElementById('hero-speed-btn');
-
-  if (playBtn) {
-    playBtn.addEventListener('click', () => {
-      const isRunning = heroNetwork.togglePlay();
-      playBtn.innerHTML = isRunning ? `
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-        Pause
-      ` : `
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        Play
-      `;
-    });
-  }
-
-  if (speedBtn) {
-    let speeds = [1.0, 1.8, 0.5];
-    let speedLabels = ['1x', '1.8x', '0.5x'];
-    let currentIdx = 0;
-
-    speedBtn.addEventListener('click', () => {
-      currentIdx = (currentIdx + 1) % speeds.length;
-      heroNetwork.setSpeed(speeds[currentIdx]);
-      speedBtn.textContent = `Speed: ${speedLabels[currentIdx]}`;
-    });
-  }
-}
-
-// Fragility Widget
-function initFragilityWidget() {
-  new FragilityWidget('fragility-widget-container');
+  new HeroNetwork('hero-canvas');
 }
 
 // Research Expandable Technical Details
@@ -133,10 +98,10 @@ function initResearchDeepDives() {
 
       if (isExpanded) {
         details.classList.remove('expanded');
-        btn.innerHTML = `Technical Deep Dive & Approach ↓`;
+        btn.innerHTML = `Technical Summary ↓`;
       } else {
         details.classList.add('expanded');
-        btn.innerHTML = `Hide Technical Details ↑`;
+        btn.innerHTML = `Hide Summary ↑`;
       }
     });
   });
@@ -199,14 +164,14 @@ function initCVPreview() {
         <div class="cv-col">
           <h4 class="cv-section-title">Research Methods & Tooling</h4>
           <div class="skills-group">
-            <span class="skill-tag">Network Science (NetworkX, igraph, graph-tool)</span>
+            <span class="skill-tag">Network Science & Graph Theory</span>
             <span class="skill-tag">Information Theory & Density Matrices</span>
             <span class="skill-tag">Laplacian Diffusion & Spectral Methods</span>
-            <span class="skill-tag">Statistical Mechanics & Thermodynamics</span>
+            <span class="skill-tag">Statistical Physics & Thermodynamics</span>
             <span class="skill-tag">Python (SciPy, NumPy, Pandas, Matplotlib)</span>
             <span class="skill-tag">Global Optimization (Simulated Annealing, PSO)</span>
             <span class="skill-tag">Monte Carlo & Percolation Algorithms</span>
-            <span class="skill-tag">C++ & High-Performance Computing</span>
+            <span class="skill-tag">C++ & Scientific Computing</span>
             <span class="skill-tag">Git / GitHub & Open Science Workflows</span>
           </div>
         </div>

@@ -16,8 +16,7 @@ export function renderPublications(containerId, modalContainerId) {
   const categories = [
     { id: 'all', label: 'All Outputs' },
     { id: 'thesis', label: 'Master\'s Thesis' },
-    { id: 'posters', label: 'Posters & Presentations' },
-    { id: 'in-prep', label: 'Work in Progress' }
+    { id: 'posters', label: 'Posters & Presentations' }
   ];
 
   let currentCategory = 'all';

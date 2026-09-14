@@ -15,16 +15,15 @@ export const siteConfig = {
     supervisor: "Prof. Manlio De Domenico",
     location: "Padua, Italy",
     phdStartDate: "November 2024",
-    headline: "Understanding how networks function—and how they fail.",
-    biography: `I am a PhD candidate at the University of Padua, working on network science, information dynamics, and the resilience of complex systems. I study how disruptions affect communication in networks, with a focus on identifying the connections and pathways that matter most for their function. My background combines physics, data science, and scientific computing, with applications ranging from biological networks to human infrastructure.`,
+    headline: "Understanding how complex networks function—and how they fail.",
+    biography: `I am a PhD candidate at the University of Padua, working on network science, information dynamics, and the resilience of complex systems. As part of the CoMuNe Lab, my research investigates functional fragility in complex networks—asking how edge and pathway disruptions impact set-to-set communication flow and overall network functionality. My background combines physics, data science, and scientific computing, with applications spanning biological networks and complex interconnected systems.`,
     interests: [
       "Network Science & Complex Systems",
-      "Information Dynamics & Diffusion",
       "Functional Fragility & Resilience",
+      "Information Dynamics & Diffusion",
       "Statistical Physics & Density Matrices",
-      "Scientific Computing & Data Analysis",
       "Biological Networks & Connectomes",
-      "Infrastructure & Spatial Networks"
+      "Scientific Computing & Data Analysis"
     ]
   },
 
@@ -45,7 +44,7 @@ export const siteConfig = {
       degree: "PhD Candidate in Physics",
       institution: "University of Padua, Italy",
       department: "Department of Physics and Astronomy 'Galileo Galilei'",
-      details: "Member of CoMuNe Lab under the supervision of Prof. Manlio De Domenico. Research focusing on functional fragility, information pathways, and perturbation dynamics in infrastructure and complex networks."
+      details: "Member of CoMuNe Lab under the supervision of Prof. Manlio De Domenico. Research focusing on functional fragility, information dynamics, and communication flow in complex networks."
     },
     {
       period: "Oct 2021 – Jul 2024",
@@ -64,45 +63,26 @@ export const siteConfig = {
   featuredResearch: [
     {
       id: "functional-fragility",
-      title: "Functional Fragility in Infrastructure Networks",
-      subtitle: "Main PhD Research Project",
-      status: "Ongoing research — Paper in preparation",
-      tag: "PhD Focus",
-      question: "Which connections and pathways are essential for communication between selected parts of a network, and how does their disruption affect overall network function?",
-      whyItMatters: "Traditional connectivity analysis measures whether a network remains structurally connected after a perturbation. However, infrastructure systems—such as power grids, railways, and road networks—must maintain functional communication and throughput under environmental and climate stressors.",
-      approach: "Using Laplacian diffusion, density matrices, and spectral entropy to construct path-based descriptions of information propagation. We compute received information and propagation times between node subsets, performing edge and pathway perturbation analysis to compare functional criticality against topological metrics like betweenness and shortest paths in empirical and synthetic networks (including C. elegans).",
+      title: "Functional Fragility & Network Resilience",
+      subtitle: "PhD Research Focus",
+      status: "PhD Research — CoMuNe Lab",
+      tag: "Network Science",
+      question: "Which connections and pathways are essential for communication between selected parts of a network, and how does their disruption affect overall function?",
+      whyItMatters: "Traditional connectivity analysis measures whether a network remains structurally connected after a perturbation. However, complex systems must maintain functional communication and throughput across key pathways.",
+      approach: "Using Laplacian diffusion, density matrices, and spectral methods to construct path-based descriptions of information propagation. We study set-to-set communication flow under edge and pathway perturbations to understand functional vulnerability in complex interconnected systems.",
       topics: [
-        "Infrastructure Networks (Power, Rail, Roads)",
+        "Functional Fragility & Vulnerability",
+        "Set-to-Set Communication Flow",
         "Laplacian Diffusion & Density Matrices",
         "Spectral Methods & Network Entropy",
-        "Path-Based Information Flow",
-        "Set-to-Set Communication",
-        "Perturbation Analysis"
-      ]
-    },
-    {
-      id: "arrow-of-time",
-      title: "The Arrow of Time in Temporal Networks",
-      subtitle: "Collaborative Research",
-      status: "Ongoing research — Empirical validation",
-      tag: "Temporal Dynamics",
-      question: "How do temporal asymmetry and non-equilibrium steady states shape stable structures in networks that evolve dynamically over time?",
-      whyItMatters: "Real-world networks are rarely static. Understanding time-irreversibility and entropy production in temporal networks reveals how information flows forward in time and which substructures maintain functional stability during continuous evolution.",
-      approach: "Formulating forward and backward network evolution models using density matrix representations and entropy production metrics. Validating theoretical predictions on empirical temporal networks, including urban transportation and human activity datasets.",
-      topics: [
-        "Temporal Network Dynamics",
-        "Forward & Backward Network Evolution",
-        "Density Matrix Representations",
-        "Entropy Production & Irreversibility",
-        "Stable Substructure Identification",
-        "Empirical Transportation Data"
+        "Path-Based Information Propagation"
       ]
     },
     {
       id: "connectome-dynamics",
       title: "Information Dynamics in Mammalian Connectomes",
       subtitle: "MSc Thesis & Biological Networks",
-      status: "Completed Thesis (Jul 2024) — Conference Poster (NetSci-X 2024)",
+      status: "Completed Thesis (Jul 2024) — NetSci-X 2024 Poster",
       tag: "Biological Networks",
       question: "How does structural wiring in mammalian brain networks govern information dynamics and phylogenetic clustering?",
       whyItMatters: "Mammalian connectomes balance physical wiring cost with efficient information integration. Quantifying information flow pathways provides insights into evolutionary patterns across different species' brain networks.",
@@ -112,8 +92,7 @@ export const siteConfig = {
         "Generalized Thermodynamics",
         "Density Matrix Formalism",
         "Simulated Annealing & Particle Swarm Optimization",
-        "Structural vs. Functional Alignment",
-        "Phylogenetic Clustering Analysis"
+        "Structural vs. Functional Alignment"
       ]
     }
   ],
@@ -154,22 +133,6 @@ export const siteConfig = {
   title        = {Information pathways analysis in mammalian connectomes unravels clusters akin to the phylogenetic tree},
   booktitle    = {NetSci-X 2024 Conference Poster Session},
   year         = {2024}
-}`
-    },
-    {
-      id: "fragility-prep",
-      category: "in-prep",
-      categoryName: "Work in Progress",
-      title: "Functional Fragility in Infrastructure Networks: Pathway Disruptions and Information Flow",
-      authors: "Mojtaba Roshana, et al.",
-      venue: "Paper in Preparation",
-      year: "2026",
-      abstract: "Comprehensive theoretical framework and empirical evaluation of set-to-set functional vulnerability in spatial infrastructure networks under edge and path disruptions.",
-      bibtex: `@article{roshana2026fragility,
-  author       = {Roshana, Mojtaba and De Domenico, Manlio},
-  title        = {Functional Fragility in Infrastructure Networks: Pathway Disruptions and Information Flow},
-  journal      = {In Preparation},
-  year         = {2026}
 }`
     }
   ],
