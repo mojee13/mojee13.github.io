@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderEducationTimeline();
   renderPublications('publications-container', 'modal-container');
   renderProjects('projects-container');
-  initCVPreview();
+  initThesisSpotlight();
 });
 
 // Theme Toggle Handler
@@ -131,49 +131,50 @@ function renderEducationTimeline() {
   `;
 }
 
-// Interactive CV Overview Toggle
-function initCVPreview() {
-  const container = document.getElementById('cv-overview-container');
+// Master's Thesis Spotlight Section
+function initThesisSpotlight() {
+  const container = document.getElementById('thesis-spotlight-container');
   if (!container) return;
+
+  const thesis = siteConfig.outputs.find(o => o.category === 'thesis');
+  if (!thesis) return;
 
   container.innerHTML = `
     <div class="cv-card">
       <div class="cv-header">
         <div>
-          <h3 class="cv-name">${siteConfig.identity.name}</h3>
-          <p class="cv-sub">${siteConfig.identity.title} · ${siteConfig.identity.institution}</p>
+          <span class="badge-pill" style="margin-bottom: 0.5rem;">University of Padua · MSc in Physics of Data</span>
+          <h3 class="cv-name" style="font-size: 1.5rem; margin-top: 0.25rem;">Master's Thesis</h3>
+          <p class="cv-sub">Graduated July 2024 · Supervisor: Prof. Manlio De Domenico</p>
         </div>
-        <a href="${siteConfig.socials.cvPdf}" target="_blank" download="Mojtaba_Roshana_Cv.pdf" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download PDF Version
-        </a>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="${siteConfig.socials.thesisPdf}" target="_blank" download="Roshana_Mojtaba_Thesis.pdf" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Thesis PDF
+          </a>
+          <a href="${siteConfig.socials.thesisUrl}" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            University Record
+          </a>
+        </div>
       </div>
 
-      <div class="cv-grid">
-        <div class="cv-col">
-          <h4 class="cv-section-title">Education & Credentials</h4>
-          ${siteConfig.education.map(e => `
-            <div class="cv-item">
-              <div class="cv-item-year">${e.period}</div>
-              <div class="cv-item-title">${e.degree}</div>
-              <div class="cv-item-inst">${e.institution}</div>
-            </div>
-          `).join('')}
-        </div>
+      <div>
+        <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+          "${thesis.title}"
+        </h4>
+        <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+          ${thesis.abstract}
+        </p>
 
-        <div class="cv-col">
-          <h4 class="cv-section-title">Research Methods & Tooling</h4>
-          <div class="skills-group">
-            <span class="skill-tag">Network Science & Graph Theory</span>
-            <span class="skill-tag">Information Theory & Density Matrices</span>
-            <span class="skill-tag">Laplacian Diffusion & Spectral Methods</span>
-            <span class="skill-tag">Statistical Physics & Thermodynamics</span>
-            <span class="skill-tag">Python (SciPy, NumPy, Pandas, Matplotlib)</span>
-            <span class="skill-tag">Global Optimization (Simulated Annealing, PSO)</span>
-            <span class="skill-tag">Monte Carlo & Percolation Algorithms</span>
-            <span class="skill-tag">C++ & Scientific Computing</span>
-            <span class="skill-tag">Git / GitHub & Open Science Workflows</span>
-          </div>
+        <h5 class="cv-section-title">Methods & Theoretical Framework</h5>
+        <div class="skills-group" style="margin-top: 0.5rem;">
+          <span class="skill-tag">Information-Theoretic Density Matrices</span>
+          <span class="skill-tag">Generalized Thermodynamics</span>
+          <span class="skill-tag">Mammalian Connectomics</span>
+          <span class="skill-tag">Simulated Annealing Optimization</span>
+          <span class="skill-tag">Particle Swarm Optimization (PSO)</span>
+          <span class="skill-tag">Network Diffusion Dynamics</span>
         </div>
       </div>
     </div>

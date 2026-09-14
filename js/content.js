@@ -34,7 +34,7 @@ export const siteConfig = {
     unipd: "https://www.dfa.unipd.it/",
     emailAcademic: "mojtaba.roshana@phd.unipd.it",
     emailPersonal: "roshana.mojtaba13@gmail.com",
-    cvPdf: "assets/Mojtaba_Roshana_Cv.pdf",
+    thesisPdf: "assets/Roshana_Mojtaba_Thesis.pdf",
     thesisUrl: "https://thesis.unipd.it/handle/20.500.12608/1/browse?authority=co10887&etal=-1&offset=86&order=1&rpp=20&sort_by=ASC&starts_with=R&type=relationCourse&utm_source=chatgpt.com"
   },
 
@@ -107,7 +107,7 @@ export const siteConfig = {
       venue: "University of Padua, Department of Physics and Astronomy",
       year: "2024",
       month: "July",
-      pdfUrl: "assets/Mojtaba_Roshana_Cv.pdf",
+      pdfUrl: "assets/Roshana_Mojtaba_Thesis.pdf",
       externalUrl: "https://thesis.unipd.it/handle/20.500.12608/1/browse?authority=co10887&etal=-1&offset=86&order=1&rpp=20&sort_by=ASC&starts_with=R&type=relationCourse&utm_source=chatgpt.com",
       abstract: "Master's thesis presented at the University of Padua under the MSc in Physics of Data degree program. Focuses on information-theoretic density matrix representations of complex networks, global optimization techniques, and applications to mammalian connectome organization.",
       bibtex: `@mastersthesis{roshana2024generalized,
