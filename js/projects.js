@@ -1,6 +1,6 @@
 /**
  * Selected Code & Projects Component
- * Renders curated research repositories, computational physics implementations, and applied work.
+ * Renders curated research repositories and computational physics implementations.
  */
 
 import { siteConfig } from './content.js';
@@ -10,18 +10,13 @@ export function renderProjects(containerId) {
   if (!container) return;
 
   const mainProjects = siteConfig.projects;
-  const appliedWork = siteConfig.appliedWork;
 
   let currentCategory = 'all';
 
   function render() {
-    let filteredProjects = mainProjects;
-    let showApplied = currentCategory === 'all' || currentCategory === 'Applied Work';
-
-    if (currentCategory !== 'all' && currentCategory !== 'Applied Work') {
-      filteredProjects = mainProjects.filter(p => p.category === currentCategory);
-      showApplied = false;
-    }
+    let filteredProjects = currentCategory === 'all'
+      ? mainProjects
+      : mainProjects.filter(p => p.category === currentCategory);
 
     container.innerHTML = `
       <div class="projects-filter-bar">
@@ -29,7 +24,6 @@ export function renderProjects(containerId) {
         <button class="filter-tab ${currentCategory === 'Research' ? 'active' : ''}" data-cat="Research">Research & Networks</button>
         <button class="filter-tab ${currentCategory === 'Scientific Computing' ? 'active' : ''}" data-cat="Scientific Computing">Scientific Computing</button>
         <button class="filter-tab ${currentCategory === 'Coursework' ? 'active' : ''}" data-cat="Coursework">Coursework</button>
-        <button class="filter-tab ${currentCategory === 'Applied Work' ? 'active' : ''}" data-cat="Applied Work">Beyond Research</button>
       </div>
 
       <div class="projects-grid">
@@ -58,37 +52,6 @@ export function renderProjects(containerId) {
           </div>
         `).join('')}
       </div>
-
-      ${showApplied ? `
-        <div class="applied-section">
-          <div class="section-divider"></div>
-          <div class="applied-header">
-            <span class="badge-pill">Beyond Research</span>
-            <h3 class="applied-title">Selected Applied & Exploratory Work</h3>
-            <p class="applied-intro">
-              In addition to academic research, I collaborate with the Limo team on digital solutions and exploratory data pipelines for business applications.
-            </p>
-          </div>
-
-          <div class="applied-grid">
-            ${appliedWork.map(w => `
-              <div class="applied-card">
-                <div class="applied-card-body">
-                  <h4 class="applied-card-title">${w.title}</h4>
-                  <p class="applied-card-role"><strong>Role:</strong> ${w.role}</p>
-                  <p class="applied-card-desc">${w.description}</p>
-                </div>
-                <div class="applied-card-footer">
-                  <a href="${w.githubUrl}" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    GitHub Project
-                  </a>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      ` : ''}
     `;
 
     // Filter Listeners

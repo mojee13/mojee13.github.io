@@ -222,24 +222,5 @@ export const siteConfig = {
         "Data pipeline optimization"
       ]
     }
-  ],
-
-  appliedWork: [
-    {
-      id: "website-limo",
-      title: "Limo Team Web Architecture",
-      category: "Applied Work",
-      role: "Frontend Development & Digital Solutions",
-      description: "Collaborative project with the Limo team developing web applications and digital interfaces for business solutions.",
-      githubUrl: "https://github.com/mojee13/website_Limo"
-    },
-    {
-      id: "madaar-ai",
-      title: "Madaar Data Analysis Platform",
-      category: "Applied Work",
-      role: "Data Analysis & AI Exploration",
-      description: "Applied data analysis and exploratory computer vision workflows built as part of team initiatives.",
-      githubUrl: "https://github.com/mojee13/Madaar"
-    }
   ]
 };
